@@ -1,0 +1,10 @@
+#include<STDIO.H>
+#include<conio.h>
+intmain()
+{
+int p=77;
+register int*ptr=&p;
+clrscr();
+printf("%d";*ptr);
+return0;
+}
