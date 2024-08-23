@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+    int value;
+    printf("enter ascii letter value\n");
+    scanf("%d",&value);
+    printf("ascii letter is %c\n",value);
+    return 0;
+}
+
+
+https://www.programiz.com/online-compiler/4lOTtMq5LXjWm
