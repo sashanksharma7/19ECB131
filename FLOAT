@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+     double value-7430.17;
+     int number=value;
+printf("double value:%.2f\n",value);
+printf("integer value: %d", number);
+return 0;
+}
+
+
+OUTPUT:
+double value :7430.17
+integer value:7430
