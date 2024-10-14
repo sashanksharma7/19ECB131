@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a1,b2,t;
+clrscr();
+printf ("enter two numbers");
+scanf ("%d %d",&a1,&b2);
+t=a1;
+a1=b2;
+b2=t;
+printf("after swapping :a1=%d,b2=%d",a1,b2);
+getch();
+}
+
+OUTPUT:
+
+enter two numbers
+7
+4
+after swapping :a1=4,b2=7
