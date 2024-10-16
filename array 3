@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main() {
+    int r, c, a[4][3], b[4][3], t[4][3];
+
+    // Input for row and column limits
+    printf("Enter the row limit (max 4): ");
+    scanf("%d", &r);
+    printf("Enter the column limit (max 3): ");
+    scanf("%d", &c);
+
+    // Ensure the limits are within the defined array size
+    if (r > 4 || c > 3 || r <= 0 || c <= 0) {
+        printf("Error: Row limit must be <= 4 and column limit must be <= 3, and greater than 0.\n");
+        return 1; // Exit with error
+    }
+
+    // Input values for the first matrix
+    printf("Enter values for the first matrix:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    // Input values for the second matrix
+    printf("Enter values for the second matrix:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    // Perform matrix addition
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            t[i][j] = a[i][j] + b[i][j];
+        }
+    }
+
+    // Output the result of the addition
+    printf("Addition value:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("\t%d", t[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+
+output :
+
+Enter the row limit (max 4): 2
+Enter the column limit (max 3): 2
+Enter values for the first matrix:
+1
+2
+3
+4
+Enter values for the second matrix:
+1
+2
+3
+4
+Addition value:
+	2	4
+	6	8
