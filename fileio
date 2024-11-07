@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *fp;
+    char *filename = "temp1.txt";
+
+    fp = fopen(filename, "r");
+    if (fp == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fputs("sharma", fp);
+  
+    fclose(fp);
+
+    return 0;
+}
