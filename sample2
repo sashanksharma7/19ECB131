@@ -8,3 +8,7 @@ clrscr();
 printf("%d";*ptr);
 return0;
 }
+
+output:
+
+77
