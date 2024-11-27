@@ -8,5 +8,11 @@ void main()
     return 0;
 }
 
+output:
+
+Enter an ASCII value:
+65
+The ASCII character is: A
+
 
 https://www.programiz.com/online-compiler/4lOTtMq5LXjWm
