@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    // Declare a char variable
+    char myChar;
+
+    // Assign a character to the variable
+    myChar = 'A';
+
+    // Print the character to the screen
+    printf("The character is: %c\n", myChar);
+
+    // Print the ASCII value of the character
+    printf("The ASCII value of '%c' is: %d\n", myChar, myChar);
+
+    return 0;
+}
+
+output:
+
+The character is: A
+The ASCII value of 'A' is: 65
