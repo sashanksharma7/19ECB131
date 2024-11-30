@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+// Function declarations
+void greet();         // Function that doesn't take any arguments and doesn't return anything
+int add(int a, int b); // Function that takes two integers as arguments and returns their sum
+
+int main() {
+    // Call the greet function
+    greet();
+    
+    // Call the add function and print the result
+    int num1 = 10, num2 = 20;
+    int result = add(num1, num2);
+    printf("The sum of %d and %d is: %d\n", num1, num2, result);
+    
+    return 0;
+}
+
+// Function definition for greet (no return type)
+void greet() {
+    printf("Hello! Welcome to the C programming world.\n");
+}
+
+// Function definition for add (returns an integer)
+int add(int a, int b) {
+    return a + b; // Returns the sum of a and b
+}
+
+
+OUTPUT:
+
+
+Hello! Welcome to the C programming world.
+The sum of 10 and 20 is: 30
