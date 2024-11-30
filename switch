@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+    printf("Menu:\n");
+    printf("1. Option 1\n");
+    printf("2. Option 2\n");
+    printf("3. Option 3\n");
+    printf("4. Exit\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    // Use switch statement to handle different choices
+    switch(choice) {
+        case 1:
+            printf("You chose Option 1.\n");
+            break;
+        case 2:
+            printf("You chose Option 2.\n");
+            break;
+        case 3:
+            printf("You chose Option 3.\n");
+            break;
+        case 4:
+            printf("Exiting program.\n");
+            break;
+        default:
+            printf("Invalid choice. Please select a valid option.\n");
+    }
+
+    return 0;
+}
+
+
+OUTPUT:
+
+Menu:
+1. Option 1
+2. Option 2
+3. Option 3
+4. Exit
+Enter your choice: 3
+You chose Option 3.
