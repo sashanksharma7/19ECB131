@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    printf("Enter a number (1 TO 3): ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            printf("10% Discount.\n");
+            break;
+        case 2:
+            printf("30% Discount.\n");
+            break;
+        case 3:
+            printf("50% Discount.\n");
+            break;
+        default:
+            printf("Invalid choice. Please choose between 1 and 3.\n");
+    }
+
+    return 0;
+}
+
+
+OUTPUT:
+
+Enter a number (1 TO 3): 3
+50% Discount.
