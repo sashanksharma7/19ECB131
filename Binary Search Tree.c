@@ -10,7 +10,7 @@ struct Node {
 
 // Function to create a new node
 struct Node* createNode(int data) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));//to allocate memory dynamically
     newNode->data = data;
     newNode->left = newNode->right = NULL;
     return newNode;
