@@ -5,4 +5,5 @@
 [Counting_sort](Counting_sort)  
 [Heap_sort](Heap_sort)  
 [Hash_function](Hash_function)    
+[Height_of_tree](Height_of_tree)
 
