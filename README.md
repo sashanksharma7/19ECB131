@@ -13,3 +13,6 @@
 [Splay_tree](Splay_tree)    
 [Stack](Stack)     
 [Threaded_binary_tree](Threaded_binary_tree)       
+[Towers_of_hanoi](Towers_of_hanoi)       
+[bubble_sort](bubble_sort)      
+[postfix_to_infix](postfix_to_infix)      
