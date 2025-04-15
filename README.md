@@ -5,5 +5,7 @@
 [Counting_sort](Counting_sort)  
 [Heap_sort](Heap_sort)  
 [Hash_function](Hash_function)    
-[Height_of_tree](Height_of_tree)
-
+[Height_of_tree](Height_of_tree)  
+[Infix_to_Postfix](Infix_to_Postfix)  
+[Linked_List](Linked_List)    
+[Merge_sort](Merge_sort)    
