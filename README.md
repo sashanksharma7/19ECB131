@@ -9,3 +9,7 @@
 [Infix_to_Postfix](Infix_to_Postfix)  
 [Linked_List](Linked_List)    
 [Merge_sort](Merge_sort)    
+[Polynomial_Addition](Polynomial_Addition)      
+[Splay_tree](Splay_tree)    
+[Stack](Stack)     
+[Threaded_binary_tree](Threaded_binary_tree)       
