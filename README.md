@@ -5,7 +5,7 @@
 [Binary_Search_Tree](Binary_Search_Tree.c)  
 [Counting_sort](Counting_sort.c)  
 [Heap_sort](Heap_sort.c)  
-[Hash_function](Hash_function. c)    
+[Hash_function](Hash_function.c)    
 [Height_of_tree](Height_of_tree.c)  
 [Infix_to_Postfix](Infix_to_Postfix.c)  
 [Linked_List](Linked_List.c)    
