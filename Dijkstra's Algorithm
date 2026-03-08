@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+int t;
+for(t=1;t<=2;t++)   // Loop for 2 test cases
+{
+int n,i,j,u;
+int cost[10][10],dist[10],visited[10]={0};
+int min,source;
+printf("\n--- Test Case %d ---\n",t);
+printf("Enter number of vertices: ");
+scanf("%d",&n);
+printf("Enter cost matrix:\n");
+for(i=0;i<n;i++)
+for(j=0;j<n;j++)
+{
+scanf("%d",&cost[i][j]);
+if(cost[i][j]==0)
+cost[i][j]=999;
+}
+printf("Enter source vertex: ");
+scanf("%d",&source);
+for(i=0;i<n;i++)
+dist[i]=cost[source][i];
+visited[source]=1;
+for(i=0;i<n-1;i++)
+{
+min=999;
+for(j=0;j<n;j++)
+{
+if(!visited[j] && dist[j]<min)
+{
+min=dist[j];
+u=j;
+}
+}
+visited[u]=1;
+for(j=0;j<n;j++)
+{
+f(!visited[j] && dist[u]+cost[u][j]<dist[j])
+dist[j]=dist[u]+cost[u][j];
+}}
+printf("Shortest distances:\n");
+for(i=0;i<n;i++)
+printf("%d -> %d = %d\n",source,i,dist[i]);
+}
+return 0;
+}
