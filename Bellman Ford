@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+#define INF 999
+
+int main()
+{
+    int n,i,j;
+    int cost[10][10],dist[10];
+
+    for(int test=1; test<=2; test++)
+    {
+        printf("\nTest Case %d\n",test);
+
+        printf("Enter number of vertices: ");
+        scanf("%d",&n);
+
+        printf("Enter cost matrix:\n");
+        for(i=0;i<n;i++)
+        for(j=0;j<n;j++)
+        scanf("%d",&cost[i][j]);
+
+        for(i=0;i<n;i++)
+        dist[i]=INF;
+
+        dist[0]=0;
+
+        for(i=0;i<n-1;i++)
+        for(j=0;j<n;j++)
+        {
+            for(int k=0;k<n;k++)
+            {
+                if(cost[j][k]!=INF && dist[k] > dist[j]+cost[j][k])
+                dist[k]=dist[j]+cost[j][k];
+            }
+        }
+
+        printf("Shortest distances:\n");
+        for(i=0;i<n;i++)
+        printf("%d ",dist[i]);
+
+        printf("\n");
+    }
+}
